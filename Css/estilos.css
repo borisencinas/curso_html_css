@@ -1,0 +1,166 @@
+/* html,body{
+  padding:0px;
+  margin:0px;
+  font-size:10px;
+  font-family:helvetica;
+}
+nav{
+  flex:
+background-color:green;
+padding:10px;
+color:white;
+} */
+/* Variables */
+:root{
+      --green-color:#7ACC2D;
+      --white-color:white;
+      --black-color:#313337;
+      --space:10px;
+      --normal:12px;
+      }
+
+
+
+/* Fin Variabels Variables */
+html,body{
+  padding:0px;
+  margin:0px;
+  font-size: var(--normal);
+  font-family: helvetica;
+  }
+
+nav{
+    display:flex;
+    background-color:var(--green-color) ;
+    padding: var(--space);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+
+    }
+nav ul{
+      display:flex;
+      }
+nav li{
+      padding-left:20px;
+      list-style: none;
+      }
+nav li a {
+      color:var(--black-color);
+      text-decoration: none;
+      }
+nav li a:hover{
+      color:var(--white-color);
+      }
+/* ===============Main section ============================== */
+
+.main_section{
+              padding:7%;
+              text-align: center;
+              }
+.products {
+          background-image: url("../images/curve.png");
+          max-height: 50px;
+          background-size: cover;
+          background-position: center top;
+          padding: 10%;
+          display: flex;
+          }
+.product {
+          padding: var(--space);
+          margin-top: -240px;
+          }
+.product .content
+          {
+          background-color: var(--white-color);
+          padding:var(--space);
+          box-shadow:0 0 1px #0c0c0c;
+          }
+.img_content{
+              text-align: center;
+              }
+.main_button{
+  background-color:var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
+  border: 0;
+  cursor: pointer;
+  /* ===> esto hace que se vea como redondo el cuadro del boton  */
+  border-radius: var(--space);
+}
+.main_button:hover{
+  /* ===> esto hace que cambie el color del boton cuando el mouse esta encima */
+                  background-color: #3e750a;
+}
+
+
+/* tarea */
+
+
+/* Incio veneficios */
+.products_tarea{
+
+  padding: 2%;
+  margin:10px;
+  display: flex;
+}
+.product_tarea {
+          padding: var(--space);
+          margin-top: -240px;
+         margin:0px;
+          }
+.product_tarea .content
+          {
+          background-color: var(--white-color);
+          padding:var(--space);
+          /* box-shadow:0 0 1px #0c0c0c; */
+          margin:0px;
+
+          }
+  /* Fin veneficios */
+
+
+
+  /* Incio menciones */
+  hr{
+    display: block;
+    border-style: inset;
+    border-width: 1px;
+  }
+
+  .products_menciones
+    {
+      padding: 10%;
+            display:flex;
+
+                  }
+  .product_menciones {
+    align-items: center;
+            /* padding: var(--space); */
+            /* margin-top: -240px; */
+           margin:10px;
+box-shadow:0 0 1px #6d6c6c;
+            }
+  .product_menciones .content
+            {
+            background-color: var(--white-color);
+
+
+            margin:0px;
+              }
+    /* Fin menciones */
+
+  .footer
+  {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black-color);
+    color: white;
+    padding: 20px
+  }
+  .contact a
+  {
+  color: var(--green-color); 
+                }
